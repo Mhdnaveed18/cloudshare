@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base Axios client. You can override baseURL with Vite env: VITE_API_BASE_URL
-const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+const baseURL = import.meta.env.VITE_API_BASE_URL || "https://cloudsharebackend-production.up.railway.app";
 
 export const apiClient = axios.create({
   baseURL,

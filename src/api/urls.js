@@ -1,8 +1,8 @@
 // Central place to manage API base and endpoints
 // Set the base in your .env as: VITE_API_BASE_URL=https://your.api
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+export const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://cloudsharebackend-production.up.railway.app";
 // Optional dedicated upload base (e.g., different domain/CDN or direct storage presigned endpoint prefix)
-export const UPLOAD_BASE = import.meta.env.VITE_UPLOAD_BASE_URL || API_BASE;
+export const UPLOAD_BASE = import.meta.env.VITE_API_BASE_URL || API_BASE;
 
 export const API_URLS = {
   auth: {
