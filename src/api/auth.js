@@ -6,7 +6,7 @@ export const authApi = {
   // Example: POST /auth/login { email, password }
   async login({ email, password }) {
     // If you don't have backend yet, this simulates success for any non-empty credentials
-    const effectiveBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+    const effectiveBase = import.meta.env.VITE_API_BASE_URL || "https://cloudsharebackend.railway.internal";
     if (effectiveBase === "https://api.example.com") {
       await new Promise((r) => setTimeout(r, 600));
       if (!email || !password) throw new Error("Email and password are required");
