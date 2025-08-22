@@ -14,7 +14,7 @@ export const API_URLS = {
     // - Status: GET /api/auth/verify/status -> { verified: boolean }
     verifySend: `${API_BASE}/api/auth/verify/send`,
     verify: `${API_BASE}/api/auth/verify`,
-    verifyStatus: `${API_BASE}/api/auth/verify/status`,
+    verifyStatus: (email) => `${API_BASE}/api/auth/verify/status?email=${email}`,
     forgotPassword: `${API_BASE}/api/auth/forgot-password`,
     resetPassword: `${API_BASE}/api/auth/reset-password`,
     me: `${API_BASE}/api/auth/me`,
